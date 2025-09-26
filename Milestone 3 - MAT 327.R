@@ -25,7 +25,7 @@ hist(wine$residual_sugar,
      xlab = "Residual Sugar (g/L)", 
      ylab = "Number of Samples") 
 
-hist(wine$residual_sugar, 
+hist(wine$alcohol, 
      main = "Wine's Alcohol Level", 
      xlab = "Alcohol (%)", 
      ylab = "Number of Samples")
@@ -34,3 +34,8 @@ barplot(table(wine$quality),
         main = "Wine Quality", 
         xlab = "Quality Score (between 0 - 10)", 
         ylab = "Number of Samples")
+
+summary(wine$fixed_acidity)
+summary(wine$residual_sugar)
+summary(wine$alcohol)
+summary(wine$quality)
